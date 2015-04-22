@@ -7,7 +7,7 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'   #AB = background, AF=
 defbce on    # use current bg color for erased chars
 
 #hardstatus alwayslastline "%{= wk} %S %{gw}%{.W} $LOGNAME %{Kg}%{.W} %H %{kK}%{.w}  %-w%{ck}%{.W} %n %t %{kc}%{.w}%+w%-12=ab"
-hardstatus alwayslastline "%{= wk} %S %{gW} $LOGNAME %{KW} %H %{kw}  %-w%{cW} %n %t %{kw}%+w%-25=%{KW} %?%F%c %m/%d%? %{wk} GNU Screen "
+hardstatus alwayslastline "%{= wk} %S %{KW} $LOGNAME %{kw}  %-w%{cW} %n %t %{kw}%+w%-25=%{KW} %?%F%c %m/%d%? %{wk} GNU Screen "
 altscreen on
 bind R eval "source $HOME/.screenrc"
 #
