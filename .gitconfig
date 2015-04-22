@@ -1,0 +1,7 @@
+[user]
+	email = leefan09@gmail.com
+	name = Lee Fan
+[push]
+    default = current
+[pull]
+    default = current
