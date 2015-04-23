@@ -31,4 +31,6 @@ end
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-tmux
+if [ -z "$SSH_TTY" ]
+    tmux
+end
