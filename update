@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd ~/.dotfiles && git pull --rebase origin master
+
 mkdir -p ~/.config/fish
 ln -sfF ~/.dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
