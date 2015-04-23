@@ -19,7 +19,7 @@ function title
 end
 
 # sets user@hostname for screen and tmux title
-if [ -z "$STY" ]
+if [ -n "$STY" ]
 else if [ -n "$TMUX" ]
 else
     title "$USER@$HOST"
