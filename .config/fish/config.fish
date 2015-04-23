@@ -20,8 +20,8 @@ end
 
 # sets user@hostname for screen and tmux title
 if [ -z "$STY" ]
-    title "$USER@$HOST"
 else if [ -n "$TMUX" ]
+else
     title "$USER@$HOST"
 end
 
