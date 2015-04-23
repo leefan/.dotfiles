@@ -1,6 +1,7 @@
 #!/bin/sh
 
-ln -sfF ~/.dotfiles/.config ~/.config
+mkdir -p ~/.config/fish
+ln -sfF ~/.dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
 ln -sfF ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -sfF ~/.dotfiles/.gitconfig ~/.gitconfig
