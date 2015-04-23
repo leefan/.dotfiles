@@ -4,3 +4,4 @@ ln -sfF ~/.dotfiles/.config ~/.config
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
 ln -sfF ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -sfF ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sfF ~/.dotfiles/.bashrc ~/.bashrc
