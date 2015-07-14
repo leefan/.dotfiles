@@ -3,16 +3,11 @@ set TERM xterm-256color
 set HOST (hostname)
 
 # Theme
-set fish_theme bobthefish
 set -g theme_display_git yes
 set -g theme_display_hg no
 set -g theme_display_virtualenv no
 set -g theme_display_ruby no
 set -g theme_display_user yes
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-set fish_plugins git brew ssh vi-mode
 
 function title
     printf "\033k$argv\033\\"
@@ -29,8 +24,29 @@ end
 #set fish_custom $HOME/dotfiles/oh-my-fish
 
 # Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
+source $fish_path/oh-my-fish.fish
+
+# Theme and Plugins
+Theme "bobthefish"
+Plugin "ssh"
 
 if [ -z "$SSH_TTY" ]
     tmux
 end
+
+# vi-mode
+function fish_mode_prompt --description "Displays the current mode"
+    if set -q __fish_vi_mode
+        switch $fish_bind_mode
+        case default
+            printf "\e[1;38;5;%d;48;5;%dm N \e[0m" 0 144
+        case insert
+            printf "\e[1;38;5;%d;48;5;%dm I \e[0m" 0 45
+        case visual
+            printf "\e[1;38;5;%d;48;5;%dm V \e[0m" 0 208
+        end
+        set_color normal
+        echo -n ''
+    end
+end
+fish_vi_mode
