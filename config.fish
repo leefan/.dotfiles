@@ -1,4 +1,5 @@
 set fish_path $HOME/.oh-my-fish
+set PATH /usr/local/bin /usr/local/sbin $PATH
 set TERM xterm-256color
 set HOST (hostname)
 
