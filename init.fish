@@ -1,4 +1,3 @@
-set fish_path $HOME/.oh-my-fish
 set PATH /usr/local/bin /usr/local/sbin $PATH
 set TERM xterm-256color
 set HOST (hostname)
@@ -38,19 +37,8 @@ if status --is-login
         title "$USER@$HOST"
     end
 
-    # Path to your custom folder (default path is $FISH/custom)
-    #set fish_custom $HOME/dotfiles/oh-my-fish
-
-    # Load oh-my-fish configuration.
-    source $fish_path/oh-my-fish.fish
-
-    # Theme and Plugins
-    Theme "bobthefish"
-    Plugin "ssh"
-
     if [ -z "$SSH_TTY" ]
         tmux
     end
     fish_vi_mode
 end
-
