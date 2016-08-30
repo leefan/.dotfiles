@@ -1,0 +1,3 @@
+*.min.js    -diff merge=ours
+*.min.css   -diff merge=ours
+*.js.map    -diff merge=ours

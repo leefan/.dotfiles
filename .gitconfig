@@ -5,3 +5,26 @@
     default = current
 [pull]
     default = current
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[rerere]
+    enabled = 1
+    autoupdate = 1
+[core]
+    editor = vim
+	attributesfile = ~/.dotfiles/.gitattributes
+[status]
+    short = true
+    branch = true
+    showuntrackedfiles = "all"
+[log]
+    decorate = short
+[format]
+	pretty = format:%C(auto)%h [%ad] %an <%ae>%n%s%d%n
+[tag]
+    sort = version:refname
+[merge "ours"]
+    name = "Keep ours merge"
+    driver = true
