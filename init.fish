@@ -8,7 +8,7 @@ end
 
 # vi-mode
 function fish_mode_prompt --description "Displays the current mode"
-    if set -q __fish_vi_mode
+    if test "$fish_key_bindings" = "fish_vi_key_bindings"
         switch $fish_bind_mode
         case default
             printf "\e[1;38;5;%d;48;5;%dm N \e[0m" 0 144
@@ -40,5 +40,5 @@ if status --is-login
     if [ -z "$SSH_TTY" ]
         tmux
     end
-    fish_vi_mode
+    fish_vi_key_bindings
 end
