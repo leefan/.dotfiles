@@ -38,7 +38,9 @@ if status --is-login
     end
 
     if [ -z "$SSH_TTY" ]
-        tmux
+        if [ -z "$TMUX" ]
+            tmux
+        end
     end
     fish_vi_key_bindings
 end
