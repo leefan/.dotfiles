@@ -25,10 +25,13 @@ end
 if status --is-login
     # Theme
     set -g theme_display_git yes
-    set -g theme_display_hg no
-    set -g theme_display_virtualenv no
+    set -g theme_display_hg yes
+    set -g theme_display_virtualenv yes
+    set -g theme_display_vagrant yes
     set -g theme_display_ruby no
     set -g theme_display_user yes
+    set -g theme_show_exit_status yes
+    set -g theme_nerd_fonts yes
 
     # sets user@hostname for screen and tmux title
     if [ -n "$STY" ]
