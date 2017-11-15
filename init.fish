@@ -30,3 +30,5 @@ if status --is-login
     end
     fish_vi_key_bindings
 end
+
+source /usr/local/opt/asdf/asdf.fish
