@@ -1,9 +1,10 @@
 #!/bin/sh
 
-cd ~/.dotfiles && git pull --rebase origin master
+cd ~/.dotfiles && git pull --rebase origin sumologic
 
 mkdir -p ~/.config/fish
 ln -sfF ~/.dotfiles/init.fish ~/.config/omf/init.fish
+ln -sfF ~/.dotfiles/sumo.fish ~/.config/fish/conf.d/sumo.fish
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
 ln -sfF ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -sfF ~/.dotfiles/.gitconfig ~/.gitconfig
