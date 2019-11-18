@@ -16,6 +16,9 @@ if status --is-login
     set -g theme_show_exit_status yes
     set -g theme_nerd_fonts yes
 
+    # use rg for fzf
+    set -gx FZF_DEFAULT_COMMAND 'rg --files --no-ignore-vcs --hidden'
+
     # sets user@hostname for screen and tmux title
     if [ -n "$STY" ]
     else if [ -n "$TMUX" ]
