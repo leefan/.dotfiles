@@ -1,0 +1,9 @@
+#!/usr/local/bin/fish
+for dir in installs plugins shims repository tmp
+    set -l src (realpath ~/.asdf)/$dir
+    set -l dst (brew --cellar)/asdf/(string sub --start=2 (asdf --version))/$dir
+    if test ! -L $dst -a -d $dst
+        rmdir $dst
+    end
+    ln -sf $src $dst
+end
