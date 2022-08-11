@@ -16,10 +16,6 @@
     editor = vim
 	attributesfile = ~/.dotfiles/.gitattributes
     excludesfile = ~/.dotfiles/.gitignoreg
-[status]
-    short = true
-    branch = true
-    showuntrackedfiles = "all"
 [log]
     decorate = short
 [format]

@@ -10,5 +10,4 @@ export PS1="\[\e[01;36m\]\u\[\e[0m\]\[\e[01;37m\]@\[\e[0m\]\[\e[01;32m\]\h\[\e[0
 
 set -o vi
 
-export NVM_DIR="/Users/leefan/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source ~/.asdf/asdf.sh
