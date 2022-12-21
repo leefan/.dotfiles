@@ -2,7 +2,7 @@
 
 cd ~/.dotfiles && git pull --rebase origin master
 
-mkdir -p ~/.config/fish
+mkdir -p ~/.config/omf
 ln -sfF ~/.dotfiles/init.fish ~/.config/omf/init.fish
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
 ln -sfF ~/.dotfiles/.tmux.conf ~/.tmux.conf
@@ -11,3 +11,4 @@ ln -sfF ~/.dotfiles/.bashrc ~/.bashrc
 ln -sfF ~/.dotfiles/.ctags ~/.ctags
 ln -sfF ~/.dotfiles/.inputrc ~/.inputrc
 ln -sfF ~/.dotfiles/.editrc ~/.editrc
+ln -sfF ~/.dotfiles/.zshrc ~/.zshrc
