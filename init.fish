@@ -38,4 +38,3 @@ function rgl --wraps=rg --description="Curated rg with colored less"
     rg -pM 200 $argv | less -R
 end
 
-source ~/.asdf/asdf.fish

@@ -4,6 +4,7 @@ cd ~/.dotfiles && git pull --rebase origin master
 
 mkdir -p ~/.config/omf
 ln -sfF ~/.dotfiles/init.fish ~/.config/omf/init.fish
+ln -sfF ~/.dotfiles/before.init.fish ~/.config/omf/before.init.fish
 ln -sfF ~/.dotfiles/.screenrc ~/.screenrc
 ln -sfF ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -sfF ~/.dotfiles/.gitconfig ~/.gitconfig
