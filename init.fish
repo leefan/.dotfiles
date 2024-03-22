@@ -18,6 +18,8 @@ if status --is-login
 
     # use rg for fzf
     set -gx FZF_DEFAULT_COMMAND 'rg --files --no-ignore-vcs --hidden'
+    # disable default venv prompt
+    set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 
     # sets user@hostname for screen and tmux title
     if [ -n "$STY" ]
